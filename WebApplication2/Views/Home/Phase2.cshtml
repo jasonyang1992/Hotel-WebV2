@@ -4,24 +4,45 @@
 
 <h2>@ViewBag.Title</h2>
 
-<br />
-
 <h3>Phase 2: System Representation- Design Object: Design the Logical Model</h3>
 <br />
+
 <p><strong>A. Summary</strong></p>
 <br />
 <p>This hotel management system will have a homepage specific to the user’s business. It will have a menu that links to the following pages: Reservation, Billing, Rooms, and Guests. </p>
-<p>In the Reservation page the user is able to input the guest’s personal information (name, email address, and phone number) and room information (check-in and check-out dates, number of rooms, and room type).  There will be calculated fields that will automatically update based on certain information inputted by the user.  
-An example of this is the total number of nights the guest will be staying which is calculated based on the check-in and check-out dates.  Another example is the total payment amount which is based on the number of nights and the the rate per room. </p>
+<p>
+    In the Reservation page the user is able to input the guest’s personal information (name, email address, and phone number) and room information (check-in and check-out dates, number of rooms, and room type).  There will be calculated fields that will automatically update based on certain information inputted by the user.
+    An example of this is the total number of nights the guest will be staying which is calculated based on the check-in and check-out dates.  Another example is the total payment amount which is based on the number of nights and the the rate per room.
+</p>
 <p>After the reservation, the Billing page will contain data generated from the Reservation page.  The total amount would have already been calculated at the backend of the system.  All transactions will be displayed and a link to a third party online payments system would be available. Once the payment is received, the system will generate an invoice report in which the user can print and/or email. </p>
 <p>In the Rooms page, information about the number of rooms available, description per room type, and the nightly rate per room is available. The number of rooms available is updated every time a reservation or check-out is made.  This is calculated through the backend of the system and cannot be modified by the user. </p>
 <p>In the Guests page, information about all the guests that have stayed in the hotel is generated from the system database and is displayed.  Such information are guest name, home address, email address, and phone number.  This page could be beneficial to the business’ marketing plans.</p>
 <br />
+
 <p><strong>B. Data Flow Diagrams</strong></p>
 <br />
+<p>Level 0 Context Diagram:</p>
+<img src="~/Images/Level0ContextDiagram.jpg" width="600" height="417" />
+<br />
+<br />
+<p>Level 1 Context Diagram:</p>
+<img src="~/Images/Level1ContextDiagram.jpg" width="600" height="417" />
+<br />
+<br />
+<p>Level 2 Context Diagram:</p>
+<img src="~/Images/Level2ContextDiagram.jpg" width="600" height="417" />
+<br />
+<br />
+
 <p><strong>C. System Flow/Menu Hierarchies</strong></p>
 <br />
+<img src="~/Images/SystemChart.jpg" width="600" height="417" />
+<br />
+<br />
+
 <p><strong>D. Report Design</strong></p>
 <br />
-<p>The system will generate an invoice report. The invoice will contain data about the guest, the booking information, and the billing information gathered from the Reservation and Billing pages and from the third party payments system.  
-The report will have a list of every transaction with its respective date, description, and amount. The user will be able to run the report anytime after the payment has been made. He/She will have the option to print and/or email this report. </p>
+<p>
+    The system will generate an invoice report. The invoice will contain data about the guest, the booking information, and the billing information gathered from the Reservation and Billing pages and from the third party payments system.
+    The report will have a list of every transaction with its respective date, description, and amount. The user will be able to run the report anytime after the payment has been made. He/She will have the option to print and/or email this report.
+</p>

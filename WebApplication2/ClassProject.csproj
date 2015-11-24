@@ -202,6 +202,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\ActivityDiagram.jpg" />
+    <Content Include="Images\CheckOutSequence.jpg" />
+    <Content Include="Images\HotelResSequence.jpg" />
+    <Content Include="Images\Level0ContextDiagram.jpg" />
+    <Content Include="Images\Level1ContextDiagram.jpg" />
+    <Content Include="Images\Level2ContextDiagram.jpg" />
+    <Content Include="Images\SystemChart.jpg" />
+    <Content Include="Images\UseCaseDiagram.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -258,6 +266,7 @@
     <Content Include="Views\Movies\Edit.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Home\Phase2.cshtml" />
+    <Content Include="Views\Home\Phase3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
