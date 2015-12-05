@@ -6,53 +6,38 @@ namespace WebApplication2.Migrations
     using System.Linq;
     using Models;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<WebApplication2.Models.MovieDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<WebApplication2.Models.BookingDBContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(WebApplication2.Models.MovieDBContext context)
+        protected override void Seed(WebApplication2.Models.BookingDBContext context)
         {
-            context.Movies.AddOrUpdate(i => i.Title,
-                new Movie
+            context.Bookings.AddOrUpdate(i => i.GuestName,
+                new Booking
                 {
-                    Title = "When Harry Met Sally",
-                    ReleaseDate = DateTime.Parse("1989-1-11"),
-                    Genre = "Romantic Comedy",
-                    Rating = "PG",
-                    Price = 7.99M
-                },
+                    GuestName = "Mel Romero",
+                    Address = "123 Lexington Ave",
+                    City = "New York",
+                    ZipCode = "10010",
+                    Email = "mel.romero@sigmabaruch.org",
+                    PhoneNumber = "3474042999",
+                    RoomNum = "1",
+                    DateIn = DateTime.Parse("10-01-2015"),
+                    DateOut = DateTime.Parse("10-05-2015"),
+                    NumberOfAdults = 1,
+                    NumberOfKids = 0,
+                    GrandTotal = 100.00M,
+                    TotalPaid = 80.00M,
+                    Balance = 20.00M
 
-                 new Movie
-                 {
-                     Title = "Ghostbusters ",
-                     ReleaseDate = DateTime.Parse("1984-3-13"),
-                     Genre = "Comedy",
-                     Rating = "PG",
-                     Price = 8.99M
-                 },
+                }
 
-                 new Movie
-                 {
-                     Title = "Ghostbusters 2",
-                     ReleaseDate = DateTime.Parse("1986-2-23"),
-                     Genre = "Comedy",
-                     Rating = "PG",
-                     Price = 9.99M
-                 },
-
-               new Movie
-               {
-                   Title = "Rio Bravo",
-                   ReleaseDate = DateTime.Parse("1959-4-15"),
-                   Genre = "Western",
-                   Rating = "PG",
-                   Price = 3.99M
-               }
            );
 
         }
     }
 }
+

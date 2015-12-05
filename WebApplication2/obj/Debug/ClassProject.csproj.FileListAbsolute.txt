@@ -211,9 +211,9 @@ C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\bin\Microsoft.Owin.Security.Goo
 C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\ClassProject.csprojResolveAssemblyReference.cache
-C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\WebApplication2.Migrations.Initial.resources
-C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\WebApplication2.Migrations.Rating.resources
-C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\WebApplication2.Migrations.DataAnnotations.resources
-C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\ClassProject.csproj.GenerateResource.Cache
 C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\WebApplication2.pdb
+C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\WebApplication2.Migrations.Initial.resources
+C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\obj\Debug\ClassProject.csproj.GenerateResource.Cache
+C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\bin\itextsharp.dll
+C:\Users\mel\Desktop\Hotel-WebV2\WebApplication2\bin\itextsharp.xml
