@@ -16,23 +16,40 @@
             font-family: Calibri, sans-serif;
         }
 
-        .background-wrap {
-            position: fixed;
-            z-index: -1000;
+        .main-content-container {
             width: 100%;
-            height: 100%;
-            overflow: hidden;
-            top: 0;
-            left: 0;
         }
 
-        #video-bg-elem {
-            position: absolute;
+        .header-unit {
+            max-width: 100%;
+            height: 600px;
+            position: relative;
             top: 0;
             left: 0;
+            display: block;
+        }
+
+        #video-container {
+            position: absolute;
+        }
+
+        #video-container {
+            top: 0%;
+            left: 0%;
             min-height: 100%;
             min-width: 100%;
+            overflow: hidden;
         }
+
+        video {
+            position: absolute;
+            z-index: 0;
+        }
+
+            video.fillWidth {
+                width: 100%;
+            }
+
 
         .content {
             position: absolute;
@@ -50,7 +67,7 @@
                 text-transform: uppercase;
                 font-weight: 300;
                 color: #fff;
-                padding-top: 15%;
+                padding-top: 10%;
                 margin-bottom: 10px;
             }
 
@@ -60,21 +77,162 @@
                 letter-spacing: 3px;
                 color: #aaa;
             }
+
+        .icons-bar {
+            width: 100%;
+            height: 250px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .icons {
+            width: 250px;
+            height: 250px;
+            padding: 40px;
+            display: inline-block;
+        }
+
+            .icons img {
+                height: 150px;
+                width: 150px;
+            }
+
+            .icons p {
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+
+        .quote {
+            background-image: url("https://d13yacurqjgara.cloudfront.net/users/15091/screenshots/1465868/workspace.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 350px;
+            text-align: center;
+        }
+
+        .quote-content {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 100px;
+        }
+
+            .quote-content p {
+                text-align: center;
+                font-size: 35px;
+                letter-spacing: 2px;
+            }
+
+        #quote-small {
+            font-size: 20px;
+        }
+
+        .content2 {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .link {
+            border: solid 1px;
+            padding: 10px;
+        }
+
+        .socialmedia {
+            height: 35px;
+            width: 35px;
+        }
+
+        footer {
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+            footer p {
+                font-size: 15px;
+            }
     </style>
 </head>
 <body>
-    <div class="background-wrap">
-        <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-            <source src="http://z8e0944c0fq469vst36jkhqn.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/loop2.mp4" type="video/mp4">
-            Video not supported
-        </video>
+
+    <div class="main-content-container">
+        <div class="header-unit">
+            <div id="video-container">
+
+                <div class="content">
+                    <h1>Watsons</h1>
+                    <p>Hotel Management System.<br />Cloud Booking Engine.<br />World Class Support.</p>
+                </div>
+
+                <video autoplay loop class="fillWidth" preload="auto" muted="muted">
+                    <source src="http://z8e0944c0fq469vst36jkhqn.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/loop2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
+            </div><!-- end video-container -->
+        </div><!-- end .header-unit -->
+        <br />
+
+        <div class="quote-content">
+            <p>Make the management of your hotel simple,<br /> powerful, and wireless.</p>
+        </div>
+        <div class="quote">        </div>
+
+        <div class="quote-content">
+            <p id="quote-small">Watsons is an affordable, mobile friendly, secure, and easy to use <br />cloud based reservation system that functions as<br /> the brain of any forward thinking hotel.</p>
+        </div>
+        <div class="content2">
+            <p>We do the heavy lifting so that you can focus on what matters most to you: <br />keeping your guests happy, your team focused, and your revenue well-managed.</p>
+        </div>
+
+        <div class="information">
+            <div class="icons-bar">
+                <div class="icons">
+                    <img src="~/Images/affordable-icon.png" /><br />
+                    <p>Affordable</p>
+                </div>
+                <div class="icons">
+                    <img src="~/Images/mobile-icon.png" /><br />
+                    <p>Mobile Friendly</p>
+                </div>
+                <div class="icons">
+                    <img src="~/Images/lock-icon.png" /><br />
+                    <p>Secure</p>
+                </div>
+                <div class="icons">
+                    <img src="~/Images/userfriendly-icon.png" /><br />
+                    <p>Easy To Use</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="content2">
+            <a class="link" href="~/Home/Phase1">Learn More</a>
+        </div>
+        <br /><br /><br />
+        <footer>
+            <div>
+                <h3>Watsons Hotel Management System</h3>
+                <img src="~/Images/divider.png" />
+                <br />
+                <p>New York, NY</p>
+                <p><a href="mailto:annalibron@gmail.com">support@watsons.com</a></p>
+            </div>
+            <hr>
+            <a href="#"><img class="socialmedia" src="~/Images/facebook.png" /></a>&emsp;
+            <a href="#"><img class="socialmedia" src="~/Images/linkedin.png" /></a>&emsp;
+            <a href="#"><img class="socialmedia" src="~/Images/twitter.png" /></a>&emsp;
+            <a href="#"><img class="socialmedia" src="~/Images/Instagram.png" /></a>&emsp;
+        </footer>
+        <br />
+
+
     </div>
 
 
-    <div class="content">
-        <h1>Video Background Tutorial</h1>
-        <p>This tutorial shows you how to put video as a background for your website.</p>
-    </div>
 </body>
 </html>
-
